@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #447692;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  margin: 0 5rem;
+}
+
+h1, h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #383838;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: #1c1c1c;
+}
+
+nav{
+  padding: 1rem 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #202020;
+}
+
+.logo {
+  font-size: 18px;
+  color: #171717;
+}
+
+.main-content {
+  margin: 3rem 5rem;
+}
+
+.title {
+  max-width: 55vw;
+  line-height: 60px; 
+}
+
+hr {
+  width: 18px;
+  margin-left: 0;
+  border-color: #F4F4F4;
+}
+
+.social-links-group {
+  display: flex;
+  justify-content: space-between;
+  /* text-decoration: underline ; */
+  max-width: 20vw;
+}
+
+.social-links-group > a {
+  color: #383838;
+  margin: 2rem 0;
+}
+
+.social-link {
+  padding: 3px 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.github {
+  background:linear-gradient(
+    to bottom, #E8BE53 0%,
+    #E8BE53 100%
+  );
+}
+
+.linkedin {
+  background:linear-gradient(
+    to bottom, #E85353 0%,
+    #E85353 100%
+  );
+}
+
+.twitter {
+  background:linear-gradient(
+    to bottom, #53B2E8 0%,
+    #53B2E8 100%
+  );
+}
+
+.github, .linkedin, .twitter {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  transition: all .2s;
+}
+
+.github:hover, .linkedin:hover , .twitter:hover{
+  background-size: 2px 52%;
+  color: white;
+}
+
+footer{
+ display:flex;
+ justify-content: space-between;
+ font-family: 'Inter', sans-serif;
+ font-size: 12px;
+ align-items: center;
+ color: #202020;
+ margin-top: 5em;
+}
+
+
+/* MOBILE */
+@media (max-width: 760px){
+  main {
+    margin: 0 1rem;
+  }
+
+  .main-content{
+    margin: 0rem;
+  }
+  
+  .title {
+    max-width: 100vw;
+    font-size: 36px;
+    line-height: inherit;
+  }
+
+  .social-links-group {
+    max-width: 55vw;
+    margin-top: 1rem;
+  }
+
+  .social-links-group > a {
+    color: #1c1c1c;
+  }
+
+}
