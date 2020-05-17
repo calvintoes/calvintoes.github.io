@@ -150,7 +150,7 @@ footer{
  font-size: 12px;
  align-items: center;
  color: #202020;
- margin-top: 5em;
+ margin-top: 25vh;
 }
 
 
@@ -174,9 +174,6 @@ footer{
     font-size: 18px;
   }
 
-  p {
-
-  }
 
   .social-links-group {
     max-width: 55vw;
@@ -186,6 +183,10 @@ footer{
   .social-links-group > a {
     color: #1c1c1c;
     margin-right: 1em;
+  }
+
+  footer{
+    margin-top: 5rem;
   }
 
 }
