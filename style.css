@@ -1,15 +1,12 @@
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #548eaf;
-  height: 100vh;
-  width: 100vw;
+  border: 0;
+  background-color: #FAFAFA;
   box-sizing: border-box;
 }
 
-main {
-  margin: 0 5rem;
-}
 
 h1, h2 {
   font-family: 'Inter', sans-serif;
@@ -21,18 +18,32 @@ h1 {
   font-size: 48px;
 }
 
-h3 {
+h3, p {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   color: #1c1c1c;
 }
 
-nav{
+nav {
   padding: 1rem 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav p {
+  margin: 0 2rem;
+}
+
+.updatebanner {
+  background-color: #E8BE53;
+  padding: 0.25rem 1rem;
+}
+
+.heading {
+  max-width: 60vw;
+  margin: 2rem 0;
 }
 
 a {
@@ -43,7 +54,6 @@ a {
 }
 
 .logo {
-  margin: 0;
   font-size: 24px;
   color: #171717;
 }
@@ -54,7 +64,7 @@ a {
 }
 
 .title {
-  max-width: 55vw;
+  width: 100%;
   line-height: 60px;
 }
 
@@ -115,7 +125,7 @@ hr {
 }
 
 #email {
-  color:#e4e4e4;
+  color:#105527;
 }
 
 #email{
@@ -145,19 +155,24 @@ hr {
   color: #F4F4F4;
 }
 
-footer{
- display:flex;
- justify-content: space-between;
- font-family: 'Inter', sans-serif;
- font-size: 14px;
- align-items: center;
- color: #202020;
- margin-bottom: 1rem;
+.footer {
+  background-color: #b1b1b1;
+  display:flex;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  align-items: center;
+  color: #202020;
+  padding: 0.5rem 0;
+}
+
+.footer p {
+  margin: 0 2rem;
 }
 
 
 /* MOBILE */
-@media (max-width: 760px){
+@media only screen and (max-width: 760px){
   main {
     margin: 0 1rem;
   }
@@ -166,9 +181,13 @@ footer{
     margin: 0rem;
   }
 
+  .heading {
+    max-width: 90vw;
+  }
+
   .title {
-    max-width: 100vw;
-    font-size: 36px;
+    width: 100%;
+    font-size: 30px;
     line-height: inherit;
   }
 
@@ -188,7 +207,6 @@ footer{
   }
 
   footer{
-    margin-top: 5rem;
   }
 
 }
