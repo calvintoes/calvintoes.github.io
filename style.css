@@ -5,11 +5,11 @@ body {
   border: 0;
   background-color: #FAFAFA;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 
 h1, h2 {
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: #383838;
 }
@@ -19,7 +19,6 @@ h1 {
 }
 
 h3, p {
-  font-family: 'Inter', sans-serif;
   font-weight: 300;
   color: #1c1c1c;
 }
@@ -58,9 +57,12 @@ a {
   color: #171717;
 }
 
-.main-content {
+main {
   margin: 0 5rem;
-  height: 90vh;
+}
+
+.main-content {
+  height: 60vh;
 }
 
 .title {
@@ -121,11 +123,11 @@ hr {
 
 .github:hover, .linkedin:hover , .twitter:hover{
   background-size: 2px 52%;
-  color: white;
+  color: rgb(114, 114, 114);
 }
 
 #email {
-  color:#105527;
+  color:#0d21d8;
 }
 
 #email{
@@ -139,7 +141,7 @@ hr {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #F4F4F4;
+  background-color: #1f1f1f;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -147,23 +149,53 @@ hr {
 #email:hover:before {
   visibility: visible;
   width: 100%;
-  background-color: #F4F4F4;
+  background-color: #1f1f1f;
 }
 
 #email:hover{
   transition: color 0.4s ease-in-out;
-  color: #F4F4F4;
+  color: #0047ca;
+}
+
+#experience, #projects {
+  margin-bottom: 5rem;
+}
+
+#experience h2 {
+  font-size: 32px;
+}
+
+#experience ul {
+  list-style-type: none;
+}
+
+#experience a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#projects h2 {
+  font-size: 32px;
+}
+
+#projects ul {
+  list-style-type: none;
+}
+
+#projects a {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .footer {
   background-color: #b1b1b1;
   display:flex;
   justify-content: space-between;
-  font-family: 'Inter', sans-serif;
   font-size: 14px;
   align-items: center;
   color: #202020;
   padding: 0.5rem 0;
+  height: 5vh;
 }
 
 .footer p {
@@ -177,8 +209,8 @@ hr {
     margin: 0 1rem;
   }
 
-  .main-content{
-    margin: 0rem;
+  .main-content, #experience, #projects{
+    height: auto;
   }
 
   .heading {
@@ -195,7 +227,6 @@ hr {
     font-size: 18px;
   }
 
-
   .social-links-group {
     max-width: 55vw;
     margin-top: 1rem;
@@ -205,6 +236,7 @@ hr {
     color: #1c1c1c;
     margin-right: 1em;
   }
+
 
   footer{
   }
