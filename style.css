@@ -40,6 +40,10 @@ nav p {
   padding: 0.25rem 1rem;
 }
 
+.updatebanner a {
+  color: rgb(173, 37, 37)
+}
+
 .heading {
   max-width: 60vw;
   margin: 2rem 0;
