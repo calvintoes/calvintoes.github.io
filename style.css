@@ -41,7 +41,12 @@ nav p {
 }
 
 .updatebanner a {
+  font-size: 18px;
   color: rgb(173, 37, 37)
+}
+
+.updatebanner a:hover {
+  color: white;
 }
 
 .heading {
