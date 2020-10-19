@@ -61,6 +61,43 @@ a {
   color: #202020;
 }
 
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 55vh;
+  width: 50vw;
+  background-color: #53B2E8;
+  left: 26%;
+  top: 200px;
+  z-index: 99;
+  text-align: center;
+  opacity: 0.97;
+}
+
+.new-site {
+  padding: 4rem;
+  line-height: 1.6em;
+}
+
+.new-site a {
+  color: #E8BE53;
+}
+
+.new-site a:hover {
+  text-decoration: underline;
+}
+
+.gif-wrapper {
+  position: relative;
+}
+
+.gif {
+  margin: 0 auto;
+  margin-top: -5rem;
+}
+
 .logo {
   font-size: 24px;
   color: #171717;
@@ -245,7 +282,14 @@ hr {
   }
 
 
-  footer{
+  .modal {
+    left: 2vw;
+    width: 96vw;
+    height: 65vh;
+  }
+
+  .new-site {
+    font-size: 36px;
   }
 
 }
